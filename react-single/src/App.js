@@ -21,7 +21,6 @@ const App = ({ name }) => {
             <button onClick={() => handleChange(inputValue)}> Add </button>
             <button onClick={() => handleChange(-inputValue)}> Subtract </button> 
             <input type="number" value={inputValue} onChange={handleInputChange}/>
-            
         </>
     );
 } 

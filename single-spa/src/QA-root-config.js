@@ -15,7 +15,25 @@ registerApplication({
     System.import(
       "@QA/react-single"
     ),
-  activeWhen: (location) => location.pathname === "/react",
+  activeWhen: (location) => location.pathname === "/react-single",
+});
+
+registerApplication({
+  name: "@QA/react-multiples",
+  app: () =>
+    System.import(
+      "@QA/react-multiples"
+    ),
+  activeWhen: (location) => ["react-multiples"],
+});
+
+registerApplication({
+  name: "@QA/react-shell",
+  app: () =>
+    System.import(
+      "@QA/react-shell"
+    ),
+  activeWhen: (location) => location.pathname === "/react-shell",
 });
 
 start({

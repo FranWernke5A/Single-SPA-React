@@ -27,7 +27,9 @@
   <script type="systemjs-importmap">
     {
       "imports": {
-        "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js"
+        "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js",
+        "react": "https://unpkg.com/react@17/umd/react.production.min.js",
+        "react-dom": "https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"
       }
     }
   </script>
@@ -42,8 +44,9 @@
       "imports": {
         "@QA/root-config": "//localhost:9000/QA-root-config.js",
         "@QA/react-single": "//localhost:8500/QA-react-single.js",
-        "react": "https://unpkg.com/react@17/umd/react.production.min.js",
-        "react-dom": "https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"
+        "@QA/react-multiples": "//localhost:8500/QA-react-multiples.js",
+        "@QA/react-parcel": "//localhost:8501/QA-react-parcel.js",
+        "@QA/react-shell": "//localhost:8500/QA-react-shell.js"
       }
     }
   </script>
